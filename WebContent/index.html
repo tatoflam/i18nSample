@@ -1,0 +1,57 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>i18n Sample Top</title>
+</head>
+<body>
+<form  method="POST" action="./I18nSampleServlet">
+<table>
+<tr>
+<td>Language: </td>
+<td>
+<select name="language">
+<option value="ja">日本語</option>
+<option value="en">English</option>
+<option value="ko">한국어</option>
+<option value="de">German</option>
+<option value="sp">español</option>
+</select>
+</td>
+</tr>
+<tr>
+<td>Page Type:</td>
+<td>
+<input type="radio" name="page" value="jsp">JSP
+<input type="radio" name="page" value="jstl" checked="checked">JSTL
+</td>
+</tr>
+<tr>
+<td>Locale.setDefault()</td>
+<td>
+<input type="radio" name="setDefault" value="on" checked="checked">on
+<input type="radio" name="setDefault" value="off" checked="checked">off
+</td>
+</tr>
+<tr>
+<td>Text</td>
+<td><input type="text" value="ありがとう" name="text1" ></td>
+</tr>
+<tr>
+<td>Number</td>
+<td><input type="text" value="55.99" name="text2" ></td>
+</tr>
+<tr>
+<td>Currency Amount</td>
+<td><input type="text" value="100.00" name="text3" ></td>
+</tr>
+</table>
+<input type="submit" value="送信">
+</form>
+<br>
+Usage: <br>
+-When Locale.setDefault() to "on" : set locale defined by selected language for the instance of JVM<br>
+-How to confirm error message ： Input text into fields of Number/Text<br>
+
+</body>
+</html>
